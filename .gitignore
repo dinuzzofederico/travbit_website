@@ -15,6 +15,9 @@ Thumbs.db
 wrangler.jsonc
 wrangler.toml
 
+# Local-only legal text exports for app-store submission (not deployed)
+legal-exports/
+
 # Node (in case we add tooling later)
 node_modules/
 npm-debug.log*
