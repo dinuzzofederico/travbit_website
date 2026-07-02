@@ -124,7 +124,8 @@
         <h2 class="section__title">Explore the world</h2>
         <p class="section__sub">Over 80 curated guides across 39 countries — and growing.</p>
       </div>
-      <div class="countries" role="list" aria-label="Available countries">
+      <div class="countries" aria-label="Available countries">
+        <div class="countries__track" role="list">
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇮🇹</span><span class="country__name">Italy</span><span class="country__count">14 guides</span></a>
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇯🇵</span><span class="country__name">Japan</span><span class="country__count">11 guides</span></a>
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇪🇸</span><span class="country__name">Spain</span><span class="country__count">6 guides</span></a>
@@ -164,6 +165,7 @@
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇹🇼</span><span class="country__name">Taiwan</span><span class="country__count">1 guide</span></a>
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇹🇭</span><span class="country__name">Thailand</span><span class="country__count">1 guide</span></a>
         <a class="country" href="#download" role="listitem"><span class="country__flag">🇻🇳</span><span class="country__name">Vietnam</span><span class="country__count">1 guide</span></a>
+        </div>
       </div>
     </section>
 
@@ -238,7 +240,6 @@
             <ul class="plan__feats">
               <li>🌟 5 top-recommended itineraries</li>
               <li>🛠️ Build your own itineraries</li>
-              <li>🗺️ Interactive maps included</li>
             </ul>
             <a href="#download" class="btn btn--ghost plan__cta">Get started free</a>
           </article>
@@ -253,7 +254,7 @@
               <li>📖 Travel stories &amp; guides</li>
               <li>🤖 1 AI itinerary / month</li>
             </ul>
-            <a href="#download" class="btn btn--ghost plan__cta">Choose monthly</a>
+            <a href="#download" class="btn btn--primary plan__cta">Start 3-day trial *</a>
           </article>
 
           <article class="plan plan--featured">
@@ -268,7 +269,7 @@
               <li>📖 Travel stories &amp; guides</li>
               <li>🤖 1 AI itinerary / month</li>
             </ul>
-            <a href="#download" class="btn btn--primary plan__cta">Start 3-day trial</a>
+            <a href="#download" class="btn btn--primary plan__cta">Start 3-day trial *</a>
           </article>
 
           <article class="plan">
@@ -280,11 +281,12 @@
             <h3>One-time passes</h3>
             <p class="plan__price"><span class="plan__per">from</span><span class="plan__amount">€2.99</span></p>
             <ul class="plan__feats">
-              <li>🔓 Unlocks all Pro features</li>
-              <li>🧭 Itinerary, city or country</li>
-              <li>🗺️ Full maps, stories &amp; guides</li>
+              <li>🧭 Single itinerary</li>
+              <li>🏙️ City pass</li>
+              <li>🗺️ Country pass</li>
               <li>♾️ No subscription needed</li>
             </ul>
+            <p class="plan__note">Purchasing a pass will only unlock the Pro features related to that exact purchase.</p>
             <a href="#download" class="btn btn--ghost plan__cta">Buy a pass</a>
           </article>
         </div>
@@ -321,9 +323,10 @@
             <span class="store-badge__name">Google Play</span>
           </a>
         </div>
-        <p class="cta__note">Start free with a 3-day Pro trial — no automatic charge when it ends.</p>
       </div>
     </section>
+
+    <p class="trial-note container">*Start free with a 3-day Pro trial — no automatic charge when it ends. You can upgrade to Pro plans whenever you want.</p>
   </main>
 
   <!-- ===================== FOOTER ===================== -->
@@ -346,6 +349,9 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Duplicate country cards so the marquee loops seamlessly
+    var _track = document.querySelector('.countries__track');
+    if (_track) _track.insertAdjacentHTML('beforeend', _track.innerHTML);
   </script>
 </body>
 </html>
