@@ -292,9 +292,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .legal-toc a { color: var(--muted); text-decoration: none; font-size: .95rem; }
 .legal-toc a:hover { color: var(--orange); }
 
-/* footer legal line */
-.footer__legal { width: 100%; color: var(--muted); font-size: .82rem; line-height: 1.5; margin-top: .3rem; }
-
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .nav__links { display: none; }
