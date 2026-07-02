@@ -35,8 +35,8 @@
       </a>
       <ul class="nav__links">
         <li><a href="#features">Features</a></li>
-        <li><a href="#build">Create</a></li>
         <li><a href="#audience">Who it's for</a></li>
+        <li><a href="#build">Create</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#languages">Languages</a></li>
       </ul>
@@ -69,7 +69,7 @@
             src="assets/img/app-hero.png"
             alt="Travbit app showing a 3-day Barcelona itinerary with day-by-day plan, travel guide and guided tours"
             class="hero__shot"
-            width="620" height="1253"
+            width="620" height="1252"
             fetchpriority="high"
           />
           <div class="blob blob--1"></div>
@@ -118,59 +118,6 @@
       </div>
     </section>
 
-    <!-- ===================== BUILD YOUR OWN ===================== -->
-    <section class="section section--tint" id="build">
-      <div class="container builder">
-        <div class="builder__copy">
-          <span class="eyebrow">Make it yours</span>
-          <h2 class="builder__title">Build your own itinerary</h2>
-          <p class="builder__lead">
-            Prefer to plan your own way? Pick the places you love, arrange them day by
-            day, and save a trip that's entirely yours — all inside Travbit.
-          </p>
-          <ul class="steps">
-            <li>
-              <span class="steps__num">1</span>
-              <div>
-                <h3>Discover places</h3>
-                <p>Browse landmarks, museums, restaurants and hidden gems on the interactive map.</p>
-              </div>
-            </li>
-            <li>
-              <span class="steps__num">2</span>
-              <div>
-                <h3>Add &amp; arrange</h3>
-                <p>Add your favourites and organise them day by day, exactly how you want.</p>
-              </div>
-            </li>
-            <li>
-              <span class="steps__num">3</span>
-              <div>
-                <h3>Save &amp; travel</h3>
-                <p>Save your custom trip and take it with you — ready whenever you are.</p>
-              </div>
-            </li>
-          </ul>
-          <a href="#download" class="btn btn--primary btn--lg">Start planning — get the app</a>
-        </div>
-
-        <div class="builder__art" aria-hidden="true">
-          <div class="trip-card">
-            <div class="trip-card__head">
-              <span class="trip-card__title">My Rome trip</span>
-              <span class="trip-card__badge">3 days</span>
-            </div>
-            <p class="trip-day">Day 1</p>
-            <div class="trip-stop"><span class="trip-stop__dot"></span>Colosseum &amp; Roman Forum</div>
-            <div class="trip-stop"><span class="trip-stop__dot"></span>Trastevere food walk</div>
-            <p class="trip-day">Day 2</p>
-            <div class="trip-stop"><span class="trip-stop__dot"></span>Vatican Museums</div>
-            <div class="trip-stop trip-stop--add">+ Add a place</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ===================== AUDIENCE ===================== -->
     <section class="section" id="audience">
       <div class="container">
@@ -183,6 +130,45 @@
           <li class="pill">🍝 Foodies after local spots</li>
           <li class="pill">🧭 Travelers who want a real guide</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===================== BUILD YOUR OWN (free gift) ===================== -->
+    <section class="section section--tint" id="build">
+      <div class="container builder builder--reverse">
+        <div class="builder__copy">
+          <span class="eyebrow">And a free gift for you</span>
+          <h2 class="builder__title">Build your own itinerary</h2>
+          <p class="builder__lead">
+            Prefer to plan your own way? Pick the places you love, arrange them day by
+            day, and save a trip that's entirely yours — all inside Travbit.
+          </p>
+          <ul class="steps">
+            <li>
+              <span class="steps__num">1</span>
+              <p>Choose the area of the world you are travelling to.</p>
+            </li>
+            <li>
+              <span class="steps__num">2</span>
+              <p>Add all itinerary services related.</p>
+            </li>
+            <li>
+              <span class="steps__num">3</span>
+              <p>Preview your itinerary timeline, anytime.</p>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn--primary btn--lg">Start planning — get the app</a>
+        </div>
+
+        <div class="builder__art">
+          <img
+            src="assets/img/app-builder.png"
+            alt="Travbit app showing a custom 'oslo gateway' itinerary — Norway, 4 days, with flights, hotel and a day-by-day timeline"
+            class="builder__shot"
+            width="620" height="1252"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
 
@@ -199,6 +185,7 @@
           <article class="plan">
             <img class="plan__icon" src="assets/img/travbit_pro_monthly.png" alt="" width="56" height="56" />
             <h3>Pro Monthly</h3>
+            <p class="plan__price">€9.99 <span>/ month</span></p>
             <p class="plan__desc">Full access to every itinerary, map and travel story.</p>
             <ul class="plan__list">
               <li>All cities &amp; countries</li>
@@ -212,6 +199,8 @@
             <span class="plan__badge">Best value</span>
             <img class="plan__icon" src="assets/img/travbit_pro_yearly.png" alt="" width="56" height="56" />
             <h3>Pro Yearly</h3>
+            <p class="plan__price">€79.99 <span>/ year</span></p>
+            <p class="plan__save">Save 33% vs monthly</p>
             <p class="plan__desc">Everything in Pro, at the best price for frequent travelers.</p>
             <ul class="plan__list">
               <li>All cities &amp; countries</li>
@@ -228,6 +217,7 @@
               <img src="assets/img/country_pass.png" alt="" width="44" height="44" />
             </div>
             <h3>One-time passes</h3>
+            <p class="plan__price"><span>from</span> €2.99</p>
             <p class="plan__desc">Not a subscriber? Pay once for just the trip you need.</p>
             <ul class="plan__list">
               <li>Itinerary pass</li>
