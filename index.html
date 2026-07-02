@@ -35,6 +35,7 @@
       </a>
       <ul class="nav__links">
         <li><a href="#features">Features</a></li>
+        <li><a href="#build">Create</a></li>
         <li><a href="#audience">Who it's for</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#languages">Languages</a></li>
@@ -59,34 +60,18 @@
             <a href="#download" class="btn btn--primary btn--lg">Start free — 3-day Pro trial</a>
             <a href="#features" class="btn btn--ghost btn--lg">See how it works</a>
           </div>
-          <p class="hero__note">Real itineraries designed by travel experts — not generic lists.</p>
+          <p class="hero__note">Real itineraries designed by travel experts.</p>
         </div>
 
-        <!-- CSS app mockup -->
-        <div class="hero__art" aria-hidden="true">
-          <div class="phone">
-            <div class="phone__notch"></div>
-            <div class="phone__screen">
-              <div class="app-map">
-                <span class="pin pin--1"></span>
-                <span class="pin pin--2"></span>
-                <span class="pin pin--3"></span>
-                <span class="pin pin--4"></span>
-                <svg class="route" viewBox="0 0 240 260" preserveAspectRatio="none">
-                  <path d="M40 60 C 120 40, 90 150, 180 130 S 120 230, 190 220" />
-                </svg>
-              </div>
-              <div class="app-sheet">
-                <span class="app-sheet__grip"></span>
-                <p class="app-sheet__title">Rome in 3 days</p>
-                <ul class="app-list">
-                  <li><span class="app-list__num">1</span><span>Colosseum &amp; Roman Forum</span></li>
-                  <li><span class="app-list__num">2</span><span>Trastevere food walk</span></li>
-                  <li><span class="app-list__num">3</span><span>Vatican Museums</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- App screenshot -->
+        <div class="hero__art">
+          <img
+            src="assets/img/app-hero.png"
+            alt="Travbit app showing a 3-day Barcelona itinerary with day-by-day plan, travel guide and guided tours"
+            class="hero__shot"
+            width="620" height="1253"
+            fetchpriority="high"
+          />
           <div class="blob blob--1"></div>
           <div class="blob blob--2"></div>
         </div>
@@ -112,7 +97,7 @@
           <article class="card">
             <div class="card__icon">📖</div>
             <h3>Stories &amp; guides</h3>
-            <p>Local tips and the real story behind each attraction — not a blog.</p>
+            <p>Local tips, stories and guided tours behind attractions.</p>
           </article>
           <article class="card">
             <div class="card__icon">🌍</div>
@@ -133,8 +118,61 @@
       </div>
     </section>
 
+    <!-- ===================== BUILD YOUR OWN ===================== -->
+    <section class="section section--tint" id="build">
+      <div class="container builder">
+        <div class="builder__copy">
+          <span class="eyebrow">Make it yours</span>
+          <h2 class="builder__title">Build your own itinerary</h2>
+          <p class="builder__lead">
+            Prefer to plan your own way? Pick the places you love, arrange them day by
+            day, and save a trip that's entirely yours — all inside Travbit.
+          </p>
+          <ul class="steps">
+            <li>
+              <span class="steps__num">1</span>
+              <div>
+                <h3>Discover places</h3>
+                <p>Browse landmarks, museums, restaurants and hidden gems on the interactive map.</p>
+              </div>
+            </li>
+            <li>
+              <span class="steps__num">2</span>
+              <div>
+                <h3>Add &amp; arrange</h3>
+                <p>Add your favourites and organise them day by day, exactly how you want.</p>
+              </div>
+            </li>
+            <li>
+              <span class="steps__num">3</span>
+              <div>
+                <h3>Save &amp; travel</h3>
+                <p>Save your custom trip and take it with you — ready whenever you are.</p>
+              </div>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn--primary btn--lg">Start planning — get the app</a>
+        </div>
+
+        <div class="builder__art" aria-hidden="true">
+          <div class="trip-card">
+            <div class="trip-card__head">
+              <span class="trip-card__title">My Rome trip</span>
+              <span class="trip-card__badge">3 days</span>
+            </div>
+            <p class="trip-day">Day 1</p>
+            <div class="trip-stop"><span class="trip-stop__dot"></span>Colosseum &amp; Roman Forum</div>
+            <div class="trip-stop"><span class="trip-stop__dot"></span>Trastevere food walk</div>
+            <p class="trip-day">Day 2</p>
+            <div class="trip-stop"><span class="trip-stop__dot"></span>Vatican Museums</div>
+            <div class="trip-stop trip-stop--add">+ Add a place</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== AUDIENCE ===================== -->
-    <section class="section section--tint" id="audience">
+    <section class="section" id="audience">
       <div class="container">
         <h2 class="section__title">Perfect for</h2>
         <p class="section__sub">However you like to travel.</p>
