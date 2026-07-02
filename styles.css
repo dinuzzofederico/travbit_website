@@ -176,6 +176,29 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: .7rem 1.15rem; font-weight: 500; font-size: .96rem; box-shadow: var(--shadow-soft);
 }
 
+/* ---------- Explore the world (countries) ---------- */
+.countries {
+  display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 2rem max(1.25rem, calc((100% - var(--maxw)) / 2)) 1rem;
+  scrollbar-width: thin;
+}
+.countries::-webkit-scrollbar { height: 8px; }
+.countries::-webkit-scrollbar-thumb { background: #ecdfce; border-radius: 999px; }
+.country {
+  scroll-snap-align: start; flex: none; width: 158px; height: 190px;
+  display: flex; flex-direction: column; justify-content: flex-end; gap: .15rem;
+  padding: 1.1rem; border-radius: var(--radius); color: var(--ink); text-decoration: none;
+  background: radial-gradient(115% 78% at 50% 0%, var(--tint) 0%, #ffffff 62%);
+  border: 1px solid var(--line); box-shadow: var(--shadow-soft);
+  transition: transform .18s ease, box-shadow .2s ease;
+}
+.country:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.country__flag { font-size: 2.3rem; line-height: 1; margin-bottom: auto; }
+.country__name { font-family: var(--font-head); font-weight: 700; font-size: 1rem; }
+.country__count { color: var(--muted); font-size: .85rem; }
+.country--more { align-items: center; justify-content: center; text-align: center; border-style: dashed; }
+.country--more .country__flag { margin-bottom: .4rem; }
+
 /* ---------- Pricing ---------- */
 .pricing {
   margin-top: 2.8rem;
@@ -196,14 +219,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 .plan__icon { margin-bottom: 1rem; }
 .plan__passes { display: flex; gap: .5rem; margin-bottom: 1rem; }
 .plan h3 { font-size: 1.3rem; font-weight: 700; }
-.plan__price { font-family: var(--font-head); font-weight: 800; font-size: 2rem; letter-spacing: -.01em; margin-top: .5rem; }
-.plan__price span { font-family: var(--font-body); font-size: .9rem; font-weight: 500; color: var(--muted); }
-.plan__save { display: inline-block; margin-top: .45rem; font-size: .78rem; font-weight: 600; color: var(--orange); background: var(--tint); padding: .22rem .6rem; border-radius: 999px; }
-.plan__desc { color: var(--muted); margin-top: .6rem; font-size: .95rem; }
-.plan__list { margin: 1.1rem 0 1.6rem; display: grid; gap: .55rem; }
-.plan__list li { position: relative; padding-left: 1.6rem; font-size: .94rem; color: #3c3d45; }
-.plan__list li::before {
-  content: "✓"; position: absolute; left: 0; color: var(--orange); font-weight: 800;
+.plan__price { margin-top: .55rem; display: flex; align-items: baseline; gap: .4rem; flex-wrap: wrap; }
+.plan__amount {
+  font-family: var(--font-head); font-weight: 800; font-size: 2.6rem; line-height: 1; letter-spacing: -.02em;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.plan__per { color: var(--muted); font-size: .9rem; font-weight: 500; }
+.plan__save { display: inline-block; margin-top: .5rem; font-size: .78rem; font-weight: 600; color: var(--orange); background: var(--tint); padding: .22rem .6rem; border-radius: 999px; }
+.plan__feats { margin: 1.2rem 0 1.6rem; display: flex; flex-direction: column; gap: .5rem; }
+.plan__feats li {
+  display: flex; align-items: center; gap: .55rem;
+  background: var(--tint); border: 1px solid var(--line); border-radius: 999px;
+  padding: .5rem .85rem; font-size: .9rem; color: #3c3d45;
 }
 .plan__cta { margin-top: auto; width: 100%; }
 
