@@ -9,6 +9,12 @@ Thumbs.db
 # Claude Code local settings
 .claude/settings.local.json
 
+# Wrangler / Cloudflare local dev artifacts
+.wrangler/
+.dev.vars
+wrangler.jsonc
+wrangler.toml
+
 # Node (in case we add tooling later)
 node_modules/
 npm-debug.log*
